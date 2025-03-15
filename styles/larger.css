@@ -1,0 +1,46 @@
+@media only screen and (min-width: 700px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        padding-top: 0;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        background-color: var(--tertiary-color);
+    }
+
+    .navigation a:hover,
+    .navigation a:focus {
+        background-color: var(--secondary-color);
+        color: white;
+        transform: scale(1.01);
+        display: block;
+    }
+
+    .navigation a {
+        color: var(--secondary-color);
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    h1 {
+        grid-area: 1/1/1/4;
+    }
+
+    .sec-course {
+        grid-area: 4/1/4/4;
+    }
+
+    .sec-cour-work {
+        grid-area: 2/1/2/3
+    }
+}

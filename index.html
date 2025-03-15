@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Hope Udoka</title>
+    <title>Course Homepage</title>
+    <meta name="description" content="lorem ipsum">
+    <meta name="author" content="Hope Ini Udoka">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 231</h1>
-    <h2>Hope Udoka</h2>
+    <header>
+        <img src="images/course-homepage-pic.webp" alt="A picture of Hope Udoka on a professional outfit" width="100">
+        <span id="name">Hope Ini Udoka</span>
+        <div id="menu-div"><a id="menu" href="#"></a></div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://github.com/Hopeudoka">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/hope-udoka/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section class="sec-cour-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Lagos, Nigeria</h2>
+            <figure>
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/lagos-large.webp">
+                    <source media="(min-width: 500px)" srcset="images/lagos-medium.webp">
+                    <img src="images/lagos-nigeria.webp" alt="A cluster of famous yellow buses in Lagos" loading="lazy"
+                        width="1500" height="750">
+                </picture>
+                <figcaption>Popular Yellow Buses, Lagos.</figcaption>
+            </figure>
+        </section>
+
+        <section class="sec-course">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="buttons">
+                <button class="each-button" id="all">All</button>
+                <button class="each-button" id="cse">CSE</button>
+                <button class="each-button" id="wdd">WDD</button>
+            </div>
+            <div id="course-list"></div>
+            <div id="total-credits">Total Credits: 0</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Hope Ini Udoka | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
