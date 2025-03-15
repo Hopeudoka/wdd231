@@ -17,7 +17,7 @@
     .navigation a:hover,
     .navigation a:focus {
         background-color: var(--secondary-color);
-        color: white;
+        color: var(--accent-color);
         transform: scale(1.01);
         display: block;
     }

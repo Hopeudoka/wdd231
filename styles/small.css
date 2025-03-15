@@ -117,6 +117,10 @@ nav ul {
     margin: 0;
 }
 
+nav a {
+    color: var(--accent-color);  
+}
+
 #menu.show::before {
     content: "X";
 }
