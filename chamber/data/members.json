@@ -1,0 +1,18 @@
+{
+    "family name": "Udoka",
+    "Date moved in": "2025-03-01",
+    "No. of people in the Family": 2,
+    "Visited by bishopric": false,
+    "Individual family members": [
+        {
+            "name": "Hope",
+            "Gender": "Female",
+            "Birthday": "2002-12-17"
+        },
+        {
+            "name": "Charity",
+            "Gender": "Female",
+            "Birthday": "2001-10-15"
+        }
+    ]
+}
