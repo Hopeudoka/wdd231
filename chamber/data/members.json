@@ -1,76 +1,76 @@
 {
-    "companies": [
+    "members": [
         {
             "name": "Supreme Ventures Ltd",
-            "Address": "12 Adeola Odeku Street, Victoria Island, Lagos",
-            "Phone": "08023456789",
+            "address": "12 Adeola Odeku Street, Victoria Island, Lagos",
+            "phone": "08023456789",
             "website": "www.supremeventures.com.ng",
-            "Image": "supreme_logo.png",
-            "Membership Level": "3 (Gold)",
-            "Industry": "Financial Services"
+            "image": "supreme_logo.png",
+            "membership Level": "3 (Gold)",
+            "industry": "Financial Services"
         },
         {
             "name": "Eko Foods & Beverages",
-            "Address": "45 Marina Road, Lagos Island, Lagos",
-            "Phone": "08023456789",
+            "address": "45 Marina Road, Lagos Island, Lagos",
+            "phone": "08023456789",
             "website": "www.ekofoods.com.ng",
-            "Image": "ekofoods_logo.png",
-            "Membership Level": "2 (Silver)",
-            "Industry": "Food & Beverage"
+            "image": "ekofoods_logo.png",
+            "membership level": "2 (Silver)",
+            "industry": "Food & Beverage"
         },
         {
             "name": "GreenTech Solutions",
-            "Address": "18B Lekki Phase 1, Lagos",
-            "Phone": "08023456789",
+            "address": "18B Lekki Phase 1, Lagos",
+            "phone": "08023456789",
             "website": "www.greentech.com.ng",
-            "Image": "greentech_logo.png",
-            "Membership Level": "3 (Gold)",
-            "Industry": "Renewable Energy"
+            "image": "greentech_logo.png",
+            "membership level": "3 (Gold)",
+            "industry": "Renewable Energy"
         },
         {
             "name": "Alpha Legal Services",
-            "Address": "22 Awolowo Road, Ikoyi, Lagos",
-            "Phone": "08023456789",
+            "address": "22 Awolowo Road, Ikoyi, Lagos",
+            "phone": "08023456789",
             "website": "www.alphalegal.com.ng",
-            "Image": "alphalegal_logo.png",
-            "Membership Level": "2 (Silver)",
-            "Industry": "Legal Services"
+            "image": "alphalegal_logo.png",
+            "membership level": "2 (Silver)",
+            "industry": "Legal Services"
         },
         {
             "name": "Naija Fashion Hub",
-            "Address": "67 Allen Avenue, Ikeja, Lagos",
-            "Phone": "08023456789",
+            "address": "67 Allen Avenue, Ikeja, Lagos",
+            "phone": "08023456789",
             "website": "www.naijafashionhub.com.ng",
-            "Image": "naijafashion_logo.png",
-            "Membership Level": "2 (Silver)",
-            "Industry": "Fashion & Retail"
+            "image": "naijafashion_logo.png",
+            "membership level": "2 (Silver)",
+            "industry": "Fashion & Retail"
         },
         {
             "name": "Bluewave Digital",
-            "Address": "89 Opebi Road, Ikeja, Lagos",
-            "Phone": "08023456789",
+            "address": "89 Opebi Road, Ikeja, Lagos",
+            "phone": "08023456789",
             "website": "www.bluewavedigital.com.ng",
-            "Image": "bluewave_logo.png",
-            "Membership Level": "3 (Gold)",
-            "Industry": "Digital Marketing"
+            "image": "bluewave_logo.png",
+            "membership level": "3 (Gold)",
+            "industry": "Digital Marketing"
         },
         {
             "name": "Prime Auto Services",
-            "Address": "30 Ikorodu Road, Maryland, Lagos",
-            "Phone": "08023456789",
+            "address": "30 Ikorodu Road, Maryland, Lagos",
+            "phone": "08023456789",
             "website": "www.primeautos.com.ng",
-            "Image": "primeautos_logo.png",
-            "Membership Level": "2 (Silver)",
-            "Industry": "Renewable Energy"
+            "image": "primeautos_logo.png",
+            "membership level": "2 (Silver)",
+            "industry": "Renewable Energy"
         },
         {
             "name": "Victoria Hospitality Group",
-            "Address": "5 Eko Atlantic City, Lagos",
-            "Phone": "08023456789",
+            "address": "5 Eko Atlantic City, Lagos",
+            "phone": "08023456789",
             "website": "www.victoriahospitality.com.ng",
-            "Image": "victoria_logo.png",
-            "Membership Level": "1 (Non-Profit)",
-            "Industry": "Hospitality & Tourism"
+            "image": "victoria_logo.png",
+            "membership level": "1 (Non-Profit)",
+            "industry": "Hospitality & Tourism"
         }
     ]
 }
