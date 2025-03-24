@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #FDCD43;
+    --secondary-color: #060C0E;
+    --tertiary-color: #C1BDBA;
+    --accent-color1: #44332E;
+    --accent-color2: #5C3712;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 290px;
+}
+
+
+header {
+    /* display: ; */
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+header div {
+    display: block;
+    align-self: center;
+}
+
+.logo {
+    width: "auto";
+    height: 70px;
+}
+
+header span {
+    font-size: small;
+    font-weight: 500;
+}
+
+/* #reduce {
+    font-size: small;
+} */
+
+.contrast-icon {
+    width: "auto";
+    height: 50px;
+    align-self: center;
+}
+
+.myButton {
+    font-size: 40px;
+    padding-right: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+ul.menuLinks {
+    display: none;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+li.current-menu-item {
+    display: block;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    list-style: none;
+    font-style: none;
+    text-decoration: none;
+    color: #060C0E;
+}
+
+ul.menuLinks.open {
+    display: block;
+}
+
+.hero {
+    position: relative;
+    display: inline-block;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+}
+
+.hero .overlay-link {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h1 {
+    display: block;
+    margin: 10px;
+}
+
+.sections {
+    /* background-color: var(--tertiary-color); */
+    padding: 0;
+    margin: 0;
+    background-color: var(--tertiary-color);
+}
+
+.sections h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px 5px;
+    /* margin: 0; */
+    /* margin: 10px 10px 10px 0; */
+    text-align: center;
+}
+
+
+.footer-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-logo {
+    width: 44px;
+    height: auto;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin: 0;
+}
