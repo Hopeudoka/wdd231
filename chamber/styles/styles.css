@@ -62,8 +62,31 @@ header span {
     cursor: pointer;
 }
 
+.myButton::before {
+    content: "=";
+}
+
+.myButton.open::before {
+    content: "x";
+}
+
 ul.menuLinks {
-    display: none;
+    /* display: none; */
+    list-style-type: none;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
 }
 
 nav ul {
@@ -85,9 +108,9 @@ nav ul li a {
     color: #060C0E;
 }
 
-ul.menuLinks.open {
+/* ul.menuLinks.open {
     display: block;
-}
+} */
 
 .hero {
     position: relative;
