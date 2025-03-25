@@ -5,7 +5,7 @@
             "address": "12 Adeola Odeku Street, Victoria Island, Lagos",
             "phone": "08023456789",
             "website": "https://www.supremeventures.com.ng",
-            "image": "supreme_logo.png",
+            "image": "../images/apple-7741471_640.png",
             "membership_level": "3 (Gold)",
             "industry": "Financial Services"
         },
@@ -14,7 +14,7 @@
             "address": "45 Marina Road, Lagos Island, Lagos",
             "phone": "08023456789",
             "website": "https://www.ekofoods.com.ng",
-            "image": "ekofoods_logo.png",
+            "image": "../images/eco-5465482_640.png",
             "membership_level": "2 (Silver)",
             "industry": "Food & Beverage"
         },
@@ -23,7 +23,7 @@
             "address": "18B Lekki Phase 1, Lagos",
             "phone": "08023456789",
             "website": "https://www.greentech.com.ng",
-            "image": "greentech_logo.png",
+            "image": "chamber/images/icon-7833512_640.png",
             "membership_level": "3 (Gold)",
             "industry": "Renewable Energy"
         },
@@ -32,7 +32,7 @@
             "address": "22 Awolowo Road, Ikoyi, Lagos",
             "phone": "08023456789",
             "website": "https://www.alphalegal.com.ng",
-            "image": "alphalegal_logo.png",
+            "image": "chamber/images/logo-2078018_640.png",
             "membership_level": "2 (Silver)",
             "industry": "Legal Services"
         },
@@ -41,7 +41,7 @@
             "address": "67 Allen Avenue, Ikeja, Lagos",
             "phone": "08023456789",
             "website": "https://www.naijafashionhub.com.ng",
-            "image": "naijafashion_logo.png",
+            "image": "../images/butterfly-7421658_640.png",
             "membership_level": "2 (Silver)",
             "industry": "Fashion & Retail"
         },
@@ -50,7 +50,7 @@
             "address": "89 Opebi Road, Ikeja, Lagos",
             "phone": "08023456789",
             "website": "https://www.bluewavedigital.com.ng",
-            "image": "bluewave_logo.png",
+            "image": "../images/logo-2150297_640.png",
             "membership_level": "3 (Gold)",
             "industry": "Digital Marketing"
         },
@@ -59,7 +59,7 @@
             "address": "30 Ikorodu Road, Maryland, Lagos",
             "phone": "08023456789",
             "website": "https://www.primeautos.com.ng",
-            "image": "primeautos_logo.png",
+            "image": "../images/logo-7462411_640.png",
             "membership_level": "2 (Silver)",
             "industry": "Renewable Energy"
         },
@@ -68,7 +68,7 @@
             "address": "5 Eko Atlantic City, Lagos",
             "phone": "08023456789",
             "website": "https://www.victoriahospitality.com.ng",
-            "image": "victoria_logo.png",
+            "image": "../images/logo-7833520_640.png",
             "membership_level": "1 (Non-Profit)",
             "industry": "Hospitality & Tourism"
         }

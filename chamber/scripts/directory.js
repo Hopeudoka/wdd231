@@ -15,11 +15,13 @@ const displayMembers = (members) => {
         let address = document.createElement("p");
         let phone = document.createElement("p");
         let website = document.createElement("a");
+        let name = document.createElement("h2");
 
         logo.innerHTML = `${member.image}`;
         address.innerHTML = `${member.address}`;
         phone.innerHTML = `${member.phone}`;
         website.innerHTML = `${member.website}`;
+        name.innerHTML = `${member.name}`;
 
         logo.setAttribute("src", member.image);
         logo.setAttribute("alt", `An image of ${member.name} company logo`);
@@ -28,6 +30,7 @@ const displayMembers = (members) => {
         logo.setAttribute("height", "50");
 
         card.appendChild(logo);
+        card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);

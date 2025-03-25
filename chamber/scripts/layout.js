@@ -1,5 +1,5 @@
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
+const gridbutton = document.querySelector("#gridIcon");
+const listbutton = document.querySelector("#listIcon");
 const display = document.querySelector("article");
 
 
