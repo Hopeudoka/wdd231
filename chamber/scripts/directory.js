@@ -17,7 +17,6 @@ const displayMembers = (members) => {
         let website = document.createElement("a");
         let name = document.createElement("h2");
 
-        logo.innerHTML = `${member.image}`;
         address.innerHTML = `${member.address}`;
         phone.innerHTML = `${member.phone}`;
         website.innerHTML = `${member.website}`;
@@ -37,6 +36,8 @@ const displayMembers = (members) => {
 
         cards.appendChild(card);
     });
+
+    cards.classList.add("grid");
 }
 
 getMemberData();

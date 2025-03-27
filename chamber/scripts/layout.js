@@ -1,6 +1,6 @@
 const gridbutton = document.querySelector("#gridIcon");
 const listbutton = document.querySelector("#listIcon");
-const display = document.querySelector("article");
+const display = document.querySelector("#cards");
 
 
 gridbutton.addEventListener("click", () => {

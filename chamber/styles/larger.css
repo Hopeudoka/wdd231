@@ -1,5 +1,46 @@
-@media screen and (min-width: 320px) {
-    /* nav {
+@media screen and (min-width: 700px) {
+    nav {
         grid-template-rows: 1fr;
-    } */
+        transition: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header span {
+        font-size: x-large;
+    }
+
+    .myButton {
+        display: none;
+    }
+
+    ul.menuLinks,
+    ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: var(--primary-color);
+    }
+
+    #animateme {
+        align-self: center;
+    }
+
+    img.contrast-icon {
+        margin: 0;
+    }
+
+    header a {
+        margin: 0;
+    }
+
+    .list section {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
