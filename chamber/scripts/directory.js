@@ -19,7 +19,6 @@ const displayMembers = (members) => {
 
         address.innerHTML = `${member.address}`;
         phone.innerHTML = `${member.phone}`;
-        website.innerHTML = `${member.website}`;
         name.innerHTML = `${member.name}`;
 
         logo.setAttribute("src", member.image);
@@ -27,6 +26,10 @@ const displayMembers = (members) => {
         logo.setAttribute("loading", "lazy");
         logo.setAttribute("width", "50");
         logo.setAttribute("height", "50");
+
+        website.textContent = member.website;
+        website.setAttribute("href", member.website);
+        website.setAttribute("target", "_blank");
 
         card.appendChild(logo);
         card.appendChild(name);
