@@ -132,18 +132,48 @@ h1 {
     margin: 10px;
 }
 
+p {
+    margin: 0;
+}
+
 .sections {
     padding: 0;
-    margin: 0;
-    background-color: var(--tertiary-color);
+    margin: 10px;
 }
 
 .sections h2 {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color1);
     color: white;
     padding: 5px 5px;
+    margin: 0;
     text-align: center;
 }
+
+#events {
+    background-color: var(--tertiary-color);;
+}
+
+#currentWeather {
+    margin-bottom: 10px;
+    background-color: var(--tertiary-color);
+    /* display: grid; */
+    text-align: center;
+    justify-content: center;
+}
+
+#currentWeather p {
+    padding-bottom: 5px;
+}
+
+#weatherForecast {
+    background-color: var(--tertiary-color);
+}
+
+/* section .sections {
+    padding: 0;
+    margin: 0;
+    background-color: none;
+} */
 
 
 .footer-div {
