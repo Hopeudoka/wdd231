@@ -167,6 +167,13 @@ p {
 
 #weatherForecast {
     background-color: var(--tertiary-color);
+    /* padding: 10px; */
+}
+
+#weatherForecast span {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
 }
 
 /* section .sections {
