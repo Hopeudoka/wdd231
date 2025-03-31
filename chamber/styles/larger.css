@@ -43,4 +43,34 @@
         display: flex;
         justify-content: space-evenly;
     }
+
+    .spotlight-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    #main-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: 0 10px;
+    }
+
+    .spotlight {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .spotlight-card {
+        padding: 10px;
+    }
+
+    .hero .overlay-link {
+        top: 80%;
+        left: 75%;
+        padding: 10px;
+        font-size: large;
+    }
 }

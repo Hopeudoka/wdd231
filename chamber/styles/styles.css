@@ -139,6 +139,11 @@ p {
 .sections {
     padding: 0;
     margin: 10px;
+    background-color: var(--tertiary-color);
+}
+
+#about {
+    grid-column: span 2;
 }
 
 .sections h2 {
@@ -149,14 +154,8 @@ p {
     text-align: center;
 }
 
-#events {
-    background-color: var(--tertiary-color);;
-}
-
 #currentWeather {
     margin-bottom: 10px;
-    background-color: var(--tertiary-color);
-    /* display: grid; */
     text-align: center;
     justify-content: center;
 }
@@ -165,23 +164,24 @@ p {
     padding-bottom: 5px;
 }
 
-#weatherForecast {
-    background-color: var(--tertiary-color);
-    /* padding: 10px; */
-}
-
 #weatherForecast span {
     display: block;
     text-align: center;
     padding: 5px 0;
 }
 
-/* section .sections {
-    padding: 0;
-    margin: 0;
-    background-color: none;
-} */
+.spotlight-image {
+    width: 100px;
+    height: 100px;
+}
 
+.spotlight-card {
+    display: grid;
+    justify-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: var(--tertiary-color);
+}
 
 .footer-div {
     display: flex;

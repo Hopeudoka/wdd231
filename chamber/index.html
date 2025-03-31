@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page - Chamber of Commerce</title>
     <meta name="author" content="Hope Ini Udoka">
-    <meta name="description" content="A directory page for the Chamber of Commerce website.">
+    <meta name="description" content="Home page page for the Lagos Chamber of Commerce website.">
     <link rel="icon" href="../favicon-c.ico">
-    <meta property="og:title" content="Directory Page">
+    <meta property="og:title" content="Home Page - Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://hopeudoka.github.io/wdd231/chamber/images/cham-lagos-preview.webp">
     <meta property="og:url" content="https://hopeudoka.github.io/wdd231/chamber/directory.html">
@@ -19,11 +19,9 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
-    <!-- <script src="scripts/directory.js" defer></script> -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
-    <!-- <script src="scripts/layout.js" defer></script> -->
 </head>
 
 <body>
@@ -47,24 +45,15 @@
         </nav>
     </header>
 
-    <!-- <nav>
-        <ul class="menuLinks">
-            <li class="current-menu-item"><a href="#">Home</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="">Join</a></li>
-            <li><a href="">Discover</a></li>
-        </ul>
-    </nav> -->
-
     <div class="hero">
-        <img src="images/updated-center-pic.webp" alt="An image of a busy Lagos market">
+        <img src="images/cham-lagos-second.webp" alt="An image of a busy Lagos street">
         <button href="#" class="overlay-link">Keynote Tickets</button>
     </div>
 
     <main>
         <h1>Home</h1>
-
-        <section class="sections">
+        <div id="main-content">
+        <section class="sections" id="about">
             <div id="events">
                 <h2>Events</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quod molestiae porro nihil ratione fugit maiores autem. Ab et, quibusdam, dolor blanditiis quam enim obcaecati aliquam animi nostrum, nihil unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corporis commodi possimus qui ab, fuga hic quaerat cupiditate maxime cumque nam sint in rerum placeat necessitatibus officiis ratione itaque nisi!</p>
@@ -81,7 +70,8 @@
                 <p id="desc"></p>
                 <p id="humidity"></p>
             </div>
-        
+        </section>
+        <section class="sections">
             <div id="weatherForecast">
                 <h2>Weather Forecast</h2>
                 <span id="today"></span>
@@ -89,7 +79,7 @@
                 <span id="dayAfter"></span>
             </div>
         </section>
-
+        </div>
         <section><div class="spotlight"></div></section>
     </main>
 

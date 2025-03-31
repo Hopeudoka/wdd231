@@ -17,7 +17,6 @@ async function apiFetch() {
         let forecastResponse = await fetch(forecastUrl);
         if (currentResponse.ok) {
             let cData = await currentResponse.json();
-            // console.log(cData);
             displayResults(cData);
         } else {
             throw Error(await currentResponse.text());
@@ -34,14 +33,6 @@ async function apiFetch() {
         console.log(error)
     }
 }
-
-// async function apiForecastFetch() {
-//     try {
-//         let response = await fetch(forecastUrl)
-//     } catch (error) {
-
-//     }
-// }
 
 function displayResults(cData) {
     let icon = `https://openweathermap.org/img/wn/${cData.weather[0].icon}.png`;
