@@ -35,11 +35,15 @@ async function apiFetch() {
 }
 
 function displayResults(cData) {
-    let icon = `https://openweathermap.org/img/wn/${cData.weather[0].icon}.png`;
+    let icon = `https://openweathermap.org/img/wn/${cData.weather[0].icon}@2x.png`;
+    // let icon = `https://openweathermap.org/img/wn/10d@2x.png`
     let descr = cData.weather[0].description;
     // weatherIcon.createElement("img");
     weatherIcon.setAttribute("src", icon);
     weatherIcon.setAttribute("alt", desc);
+    weatherIcon.setAttribute("width", 150);
+    weatherIcon.setAttribute("height", 150);
+    // weatherIcon.setAttribute("loading", "lazy");
     temp.innerHTML = `Temp: ${cData.main.temp}\u00B0F`;
     desc.innerHTML = `${descr}`;
     humidity.innerHTML = `Humidity: ${cData.main.humidity}`;
@@ -54,8 +58,8 @@ function getWeekdayName(dateString) {
 }
 
 function displayForecast(data2) {
-tomorrow.innerHTML = `${getWeekdayName(data2.list[0].dt_txt)}: ${data2.list[0].main.temp}\u00B0F`;
-dayAfter.innerHTML = `${getWeekdayName(data2.list[8].dt_txt)}: ${data2.list[8].main.temp}\u00B0F`;
+    tomorrow.innerHTML = `${getWeekdayName(data2.list[0].dt_txt)}: ${data2.list[0].main.temp}\u00B0F`;
+    dayAfter.innerHTML = `${getWeekdayName(data2.list[8].dt_txt)}: ${data2.list[8].main.temp}\u00B0F`;
 }
 
 
