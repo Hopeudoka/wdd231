@@ -37,6 +37,7 @@ async function apiFetch() {
 function displayResults(cData) {
     let icon = `https://openweathermap.org/img/wn/${cData.weather[0].icon}.png`;
     let descr = cData.weather[0].description;
+    // weatherIcon.createElement("img");
     weatherIcon.setAttribute("src", icon);
     weatherIcon.setAttribute("alt", desc);
     temp.innerHTML = `Temp: ${cData.main.temp}\u00B0F`;
