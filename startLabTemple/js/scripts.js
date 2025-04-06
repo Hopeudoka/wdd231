@@ -1,8 +1,7 @@
 import { temples } from "../data/temples.js";
-// console.log(temples);
 
 import { url } from "../data/temples.js";
-// console.log(url);
+
 
 const showhere = document.querySelector("#showHere");
 const mydialog = document.querySelector("#mydialog");
