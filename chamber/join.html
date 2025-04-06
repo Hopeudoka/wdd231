@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <!-- <script src="scripts/weather.js" defer></script> -->
-    <!-- <script src="scripts/spotlight.js" defer></script> -->
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
@@ -45,13 +44,88 @@
         </nav>
     </header>
 
-    <!-- <div class="hero">
-        <img src="images/cham-lagos-second.webp" alt="An image of a busy Lagos street">
-        <button class="overlay-link">Keynote Tickets</button>
-    </div> -->
-
     <main>
+        <form method="GET" action="thanks.html" class="join-form">
+            <fieldset class="fieldset">
+                <legend> Personal Information</legend>
+
+                <label for="firstName">First Name<span class="required">*</span>:</label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="First Name" tabindex="1">
+
+                <label for="lastName">Last Name<span class="required">*</span>:</label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Last Name" tabindex="2">
+
+                <label for="orgTitle">Organizational Title<span class="required">*</span>:</label>
+                <input type="text" id="orgTitle" name="orgTitle" required autocomplete="organization-title"
+                    pattern="^[A-Za-z\s\-]{7,}$" title="e.g. Senior Project Manager" tabindex="3">
+            </fieldset>
+
+            <fieldset class="fieldset">
+                <legend> Contact Information</legend>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" title="Email" autocomplete="email"
+                    placeholder="e.g. someone@gmail.com" tabindex="4">
+
+                <label for="phone">Phone Number<span class="required">*</span>:</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Phone Number"
+                    placeholder="e.g. 123-456-7890" tabindex="5">
+            </fieldset>
+
+            <fieldset class="fieldset">
+                <legend> Membership Information </legend>
+
+                <label for="orgName">Organization Name<span class="required">*</span>:</label>
+                <input type="text" id="orgName" name="orgName" required title="Your Organization/Business name" autocomplete="organization" tabindex="6">
+
+                <label for="membershipLevel">Membership Level<span class="required">*</span>:</label>
+                <select id="membershipLevel" name="membershipLevel" required tabindex="7">
+                    <option value="">-- Please choose a membership level --</option>
+                    <option value="nonProfit">Non-profit Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+
+                <label for="description">Organization Description<span class="required">*</span>:</label>
+                <textarea id="description" name="description" rows="4" cols="30" required placeholder="Describe your organization in 50 words or less" tabindex="8"></textarea>
+            </fieldset>
+
+            <input type="hidden" name="formLoadedAt" id="formLoadedAt">
+
+            <button type="submit" tabindex="9">Send Application</button>
+        </form>
+
+        <div class="membership-cards" id="showHere">
+            <div class="card" data-membership="nonprofit">
+              <h3>Non-profit Membership</h3>
+              <p>Basic membership with access to limited features.</p>
+              <a href="#" class="card-link">Learn More</a>
+            </div>
+            <div class="card" data-membership="bronze">
+              <h3>Bronze Membership</h3>
+              <p>Intermediate membership with extra benefits.</p>
+              <a href="#" class="card-link">Learn More</a>
+            </div>
+            <div class="card" data-membership="silver">
+              <h3>Silver Membership</h3>
+              <p>Premium membership with full access to all features.</p>
+              <a href="#" class="card-link">Learn More</a>
+            </div>
+            <div class="card" data-membership="gold">
+              <h3>Gold Membership</h3>
+              <p>Exclusive membership with VIP access and perks.</p>
+              <a href="#" class="card-link">Learn More</a>
+            </div>
+        </div>
         
+        <dialog id="mydialog">
+            <div>
+              <h2>Membership Title</h2>
+              <button id="closeDialog">X</button>
+            </div>
+            <p id="dialogContent"></p>
+        </dialog>
     </main>
 
     <footer>

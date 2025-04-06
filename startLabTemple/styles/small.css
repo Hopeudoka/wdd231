@@ -1,0 +1,17 @@
+*{box-sizing: border-box;}
+
+#mydialog {
+    padding: 0;
+}
+
+#mydialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: aliceblue;
+    padding: 5px;
+    border-bottom: black solid 1px;
+}
+
+#mydialog p {
+    padding: 5px;
+}

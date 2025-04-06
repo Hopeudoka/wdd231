@@ -1,0 +1,19 @@
+*{box-sizing: border-box;}
+
+#openButton1, #openButton2, #openButton3 {
+    background-color: darkblue;
+    color: white;
+}
+
+#dialogBox {
+    background-color: white;
+}
+
+#closeButton {
+    background-color: darkred;
+    color: white;
+}
+
+::backdrop {
+    background-color: rgba(241, 207, 207, 0.5);
+}
