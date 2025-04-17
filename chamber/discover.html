@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <!-- <script src="scripts/weather.js" defer></script> -->
+    <script src="scripts/discover.js" defer></script>
     <!-- <script src="scripts/spotlight.js" defer></script> -->
 </head>
 
@@ -50,9 +50,106 @@
         <button class="overlay-link">Keynote Tickets</button>
     </div> -->
 
-    <main>
-        <h1>Discover</h1>
+    <main class="discover-main">
+        <h1>Discover Lagos</h1>
         
+        <div class="sidebar">
+            <div class="demographics">
+                <h2>Lagos at a Glance</h2>
+                <p>Population: ~15 million</p>
+                <p>Area: 1,171 km²</p>
+                <p>Founded: 15th century</p>
+                <p>Economic Hub of Nigeria</p>
+                <p>Official Language: English</p>
+            </div>
+            
+            <div class="visitor-info">
+                <h2>Visitor Information</h2>
+                <p id="visit-message">Welcome to Lagos!</p>
+            </div>
+        </div>
+
+        <section class="discover-gallery">
+            <div class="card">
+                <h2>Lekki Conservation Centre</h2>
+                <figure>
+                    <img src="images/lekki.webp" data-src="images/lekki.webp" alt="Lekki Conservation Centre canopy walkway" loading="lazy">
+                </figure>
+                <address>19 Lekki - Epe Expy, Lekki Penninsula II 106104, Lagos</address>
+                <p>A 78-hectare nature reserve with a canopy walkway through the treetops, offering views of wildlife and the lagoon.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>Nike Art Gallery</h2>
+                <figure>
+                    <img src="images/nike.webp" data-src="images/nike.webp" alt="Nike Art Gallery exterior" loading="lazy">
+                </figure>
+                <address>2, Elegushi Rd, Ikate 106104, Lagos</address>
+                <p>A four-story art gallery housing about 8,000 diverse artworks from various Nigerian artists.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>Tarkwa Bay Beach</h2>
+                <figure>
+                    <img src="images/tarkwa.webp" data-src="images/tarkwa.webp" alt="Tarkwa Bay Beach shoreline" loading="lazy">
+                </figure>
+                <address>Tarkwa Bay Island, Lagos</address>
+                <p>A sheltered beach near the Lagos Harbor that's popular with swimmers and water sports enthusiasts.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>National Museum Lagos</h2>
+                <figure>
+                    <img src="images/museum.webp" data-src="images/mmuseum.webp" alt="National Museum Lagos building" loading="lazy">
+                </figure>
+                <address>Onikan Rd, Lagos Island, Lagos</address>
+                <p>Showcases Nigerian art, archaeological and ethnographic exhibits, including Benin Bronzes.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>Freedom Park</h2>
+                <figure>
+                    <img src="images/freedom.webp" data-src="images/freedom.webp" alt="Freedom Park Lagos" loading="lazy">
+                </figure>
+                <address>1 Hospital Rd, Lagos Island, Lagos</address>
+                <p>A memorial and leisure park built on the site of a former colonial prison, now hosting cultural events.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>Eko Atlantic City</h2>
+                <figure>
+                    <img src="images/eko.webp" data-src="images/eko.webp" alt="Eko Atlantic City development" loading="lazy">
+                </figure>
+                <address>Victoria Island, Lagos</address>
+                <p>A planned city being constructed on land reclaimed from the Atlantic Ocean, dubbed "Africa's Future Hong Kong".</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>New Afrika Shrine</h2>
+                <figure>
+                    <img src="images/africa.webp" data-src="images/africa.webp" alt="New Afrika Shrine venue" loading="lazy">
+                </figure>
+                <address>Pepple St, Ikeja, Lagos</address>
+                <p>A cultural center and music venue established by Femi Kuti to honor his father Fela Kuti's legacy.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>Kajuru Castle</h2>
+                <figure>
+                    <img src="images/kajuru.webp" data-src="images/kajuru.webp" alt="Kajuru Castle building" loading="lazy">
+                </figure>
+                <address>KM 45, Lekki - Epe Expressway, Lagos</address>
+                <p>A medieval Germany-style castle resort with towers, dungeons, and a crocodile-infested moat.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+        </section>
     </main>
 
     <footer>
