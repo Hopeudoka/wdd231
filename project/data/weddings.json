@@ -1,0 +1,21 @@
+{
+    "weddings": [
+      {
+        "title": "Yoruba Engagement",
+        "date": "2023-12-15",
+        "location": "Ibadan",
+        "tradition": "Yoruba",
+        "highlight": "Exchange of gifts between families",
+        "description": "The Yoruba engagement is rich with customs, prayers, and symbolic acts representing unity and respect."
+      },
+      {
+        "title": "Igbo Wine Carrying",
+        "date": "2024-01-20",
+        "location": "Enugu",
+        "tradition": "Igbo",
+        "highlight": "Bride presents wine to groom",
+        "description": "The Igbo wine carrying ceremony is a symbol of the bride choosing her husband in front of elders."
+      }
+    ]
+}
+  

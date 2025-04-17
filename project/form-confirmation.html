@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Confirmation - Naija Wedding Vibes</title>
+  <meta name="description" content="Confirmation page for form submission.">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+  <header>
+    <img src="images/njwv.webp" alt="Naija Wedding Vibes Logo" class="logo" />
+    <div class="title">
+      <h1>Naija Wedding Vibes</h1>
+    </div>
+    <button id="menuBtn" aria-label="Open Menu">☰</button>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thank You for Contacting Us!</h1>
+    <div id="confirmation-details"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Naija Wedding Vibes</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script type="module">
+    // Hamburger
+    document.getElementById("menuBtn").addEventListener("click", () => {
+      document.getElementById("mainNav").classList.toggle("show");
+    });
+
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+
+    // Display form data
+    const details = document.getElementById("confirmation-details");
+    const savedData = localStorage.getItem("formSubmission");
+
+    if (savedData) {
+      const { name, email, message } = JSON.parse(savedData);
+      details.innerHTML = `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong><br>${message}</p>
+      `;
+      localStorage.removeItem("formSubmission"); // Clear after showing
+    } else {
+      details.innerHTML = `<p>No form data found.</p>`;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture - Naija Wedding Vibes</title>
+  <meta name="author" content="Hope Ini Udoka">
+  <meta name="description" content="Explore Nigerian wedding traditions and cultural practices.">
+  <link rel="icon" href="../favicon-p.ico">
+  <meta property="og:title" content="Culture - Naija Wedding Vibes">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="images/NJWV.webp" alt="Naija Wedding Vibes Logo" class="logo">
+    <div id="title"><span>Naija Wedding Vibes</span></div>
+    <button id="menuBtn" aria-label="Open Menu">&#9776;</button>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <!-- <li><a href="stories.html">Stories</a></li> -->
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Nigerian Wedding Culture</h1>
+    <img src="images/culture.webp" alt="Nigerian traditional wedding ceremony">
+    <p>Nigeria is a country rich in culture, and weddings reflect the deep traditions and colorful customs of its many ethnic groups. From the Yoruba engagement ceremony to the Igbo wine-carrying and the Hausa courtship rituals, every tradition is a celebration of unity, family, and love.</p>
+
+    <p>Each tribe has unique customs, attire, music, and cuisine that make weddings memorable. Traditional attires like the agbada, isiagu, gele, and ankara are worn with pride. Drumming, dancing, and storytelling also play a central role in the festivities.</p>
+
+    <button class="btn">Learn More</button>
+
+    <div id="modal" class="modal">
+        <div id="modal-content" class="modal-content"></div>
+    </div>
+      
+  </main>
+
+  <footer>
+    <div>
+      <p>Naija Wedding Vibes</p>
+      <p>6 Gbemi Oluwa Close, Ikeja, Lagos State</p>
+      <p>hope.udoka2023@gmail.com</p>
+      <p>+2349138996931</p>
+    </div>
+
+    <div class="footer-div">
+      <img class="footer-logo" src="images/youtube_icon.svg" alt="youtube_icon">
+      <img class="footer-logo" src="images/twitter_icon.svg" alt="twitter_icon">
+      <img class="footer-logo" src="images/linkedin_icon.svg" alt="linkedin_icon">
+    </div>
+
+    <div>
+      <p>WDD231 Class Project</p>
+      <p>Hope Ini Udoka</p>
+      <p>&copy;<span id="currentyear"></span> Naija Wedding Vibes</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("menuBtn").addEventListener("click", () => {
+      document.getElementById("mainNav").classList.toggle("show");
+    });
+
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+  </script>
+</body>
+</html>

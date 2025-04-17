@@ -1,6 +1,56 @@
-@media screen and (min-width: 400px) {
-    #wireframe {
-        width: 400px;
-        height: auto;
+@media (min-width: 768px) {
+    header {
+      flex-wrap: nowrap;
+    }
+  
+    #menuBtn {
+      display: none;
+    }
+  
+    #mainNav {
+      display: block !important;
+      width: auto;
+    }
+  
+    #mainNav ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 20px;
+      padding: 0;
+      background-color: transparent;
+    }
+  
+    #mainNav a {
+      display: inline-block;
+      padding: 0;
+    }
+  
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+  
+    .btn {
+      margin: 20px 0;
+    }
+  
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: left;
+      flex-wrap: wrap;
+    }
+  
+    .footer-div {
+      display: flex;
+      gap: 10px;
+    }
+  
+    .footer-logo:hover {
+      transform: scale(1.1);
     }
 }

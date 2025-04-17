@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Naija Wedding Vibes</title>
+  <meta name="author" content="Hope Ini Udoka">
+  <meta name="description" content="Contact Naija Wedding Vibes for inquiries or feedback.">
+  <link rel="icon" href="../favicon-p.ico">
+  <meta property="og:title" content="Contact - Naija Wedding Vibes">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="images/NJWV.webp" alt="Naija Wedding Vibes Logo" class="logo">
+    <div id="title"><span>Naija Wedding Vibes</span></div>
+    <button id="menuBtn" aria-label="Open Menu">&#9776;</button>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <!-- <li><a href="stories.html">Stories</a></li> -->
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Whether it's a question, a suggestion, or you just want to say hello—drop us a message below.</p>
+
+    <form id="contactForm">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <div>
+      <p>Naija Wedding Vibes</p>
+      <p>6 Gbemi Oluwa Close, Ikeja, Lagos State</p>
+      <p>hope.udoka2023@gmail.com</p>
+      <p>+2349138996931</p>
+    </div>
+
+    <div class="footer-div">
+      <img class="footer-logo" src="images/youtube_icon.svg" alt="youtube_icon">
+      <img class="footer-logo" src="images/twitter_icon.svg" alt="twitter_icon">
+      <img class="footer-logo" src="images/linkedin_icon.svg" alt="linkedin_icon">
+    </div>
+
+    <div>
+      <p>WDD231 Class Project</p>
+      <p>Hope Ini Udoka</p>
+      <p>&copy;<span id="currentyear"></span> Naija Wedding Vibes</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("menuBtn").addEventListener("click", () => {
+      document.getElementById("mainNav").classList.toggle("show");
+    });
+
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+  </script>
+</body>
+</html>
